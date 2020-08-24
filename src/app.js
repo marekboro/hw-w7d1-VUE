@@ -32,7 +32,16 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             removeTask:function(index){
                 this.tasks.splice(index,1);
+            },
+            convertBool:function(bool){
+                if (bool === true){
+                    return "High"
+                }
+                else {
+                    return "Low"
+                }
             }
+
             
 
         }

@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="./js/bundle.js"></script>
+
     <title>w7-d1-homework</title>
 </head>
 <body>
@@ -23,7 +25,9 @@
         <ul>
         <li v-for="(task,index) in tasks" :class="task.isHighPriority ? 'high_priority':'low_priority'">
             <span>{{task.description}}</span>
-            <span>{{task.isHighPriority}}</span>
+            <!-- <span>{{convertBool()}}</span> -->
+            <!-- <span>{{task.isHighPriority}}</span> -->
+            <span>{{convertBool(task.isHighPriority)}}</span>
             <span><button v-on:click=flipPriority(index)>Change Priority</button></span>
             <span><button v-on:click=removeTask(index)>Remove Task</button></span>
 
