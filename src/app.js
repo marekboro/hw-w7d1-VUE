@@ -19,7 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
             addNewTask: function(){
                 this.tasks.push({
                     description:this.newTask,
-                    isHighPriority:false
+                    isHighPriority:this.priority
+                    // isHighPriority:false
                 }) 
             },
             flipPriority:function(index){

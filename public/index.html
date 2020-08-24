@@ -12,9 +12,9 @@
         <form v-on:submit.prevent="addNewTask">
             <label for="newTask">Task description</label>
             <input id="new-task" type="text" v-model="newTask">
-            <input id="h_priority" type="radio" name="priority" value='true'>
+            <input id="h_priority" type="radio" v-model="priority" value='true'>
             <label for="h_priority">High</label>
-            <input id="l_priority" type="radio" name="priority" value="false">
+            <input id="l_priority" type="radio" v-model="priority" value="false">
             <label for="l_priority">Low</label>
             <input type="submit" value="Save task">
         </form>
