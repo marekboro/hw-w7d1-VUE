@@ -6,6 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
         data: {
             tasks:[
                 {description:"Do homework", isHighPriority: true},
+                {description:"Scratch back", isHighPriority: false},
+                {description:"Stare at the stars", isHighPriority: false},
+                {description:"Listen to music", isHighPriority: false},
+                {description:"Stare at the ceiling", isHighPriority: false},
                 {description:"Dance till you drop", isHighPriority:false}
             ]
         }
