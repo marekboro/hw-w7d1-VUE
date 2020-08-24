@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {description:"Stare at the ceiling", isHighPriority: false},
                 {description:"Dance till you drop", isHighPriority:false}
             ],
-            // newTask:"Feed Chickens" // TEST
+           
             newTask:""
         },
         methods:{
@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 this.tasks.push({
                     description:this.newTask,
                     isHighPriority:this.priority
-                    // isHighPriority:false
                 }) 
             },
             flipPriority:function(index){
@@ -30,6 +29,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 else {
                 this.tasks[index].isHighPriority=true;
                 }
+            },
+            removeTask:function(index){
+                this.tasks.splice(index,1);
             }
             
 

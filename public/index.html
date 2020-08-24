@@ -21,10 +21,11 @@
         </section>
         <section id="displayedTasks">
         <ul>
-        <li v-for="(task,index) in tasks">
+        <li v-for="(task,index) in tasks" :class="task.isHighPriority ? 'high_priority':'low_priority'">
             <span>{{task.description}}</span>
             <span>{{task.isHighPriority}}</span>
             <span><button v-on:click=flipPriority(index)>Change Priority</button></span>
+            <span><button v-on:click=removeTask(index)>Remove Task</button></span>
 
         </li>
         </ul>
