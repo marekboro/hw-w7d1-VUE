@@ -12,6 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 {description:"Stare at the ceiling", isHighPriority: false},
                 {description:"Dance till you drop", isHighPriority:false}
             ]
+        },
+        methods:{
+            
         }
     });
 });

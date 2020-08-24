@@ -9,8 +9,20 @@
 <body>
     <div id='app'>
     <ul>
+        <form v-on:submit.prevent="addNewTask">
+            <label for="newTask">Task description</label>
+            <input id="new-task" type="text">
+            <input id="h_priority" type="radio" name="priority" value='true'>
+            <label for="h_priority">High</label>
+            <input id="l_priority" type="radio" name="priority" value="false">
+            <label for="l_priority">Low</label>
+            <input type="submit" value="Save task">
+
+
+        </form>
         <li v-for="task in tasks">
             <span>{{task.description}}</span>
+            <span>{{task.isHighPriority}}</span>
         </li>
     </ul>
     </div>
