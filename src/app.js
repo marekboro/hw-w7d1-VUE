@@ -5,14 +5,15 @@ document.addEventListener("DOMContentLoaded", () => {
         el: "#app",
         data: {
             tasks:[
-                {description:"Do homework", isHighPriority: true},
-                {description:"Scratch back", isHighPriority: false},
-                {description:"Stare at the stars", isHighPriority: false},
-                {description:"Listen to music", isHighPriority: false},
-                {description:"Stare at the ceiling", isHighPriority: false},
-                {description:"Dance till you drop", isHighPriority:false}
+                {description:"Walk through the valley", isHighPriority: false},
+                {description:"Harvest Grain", isHighPriority: false},
+                {description:"Look at my wife", isHighPriority: false},
+                {description:"Shun fancy things like electricity", isHighPriority: false},
+                {description:"Milk cows", isHighPriority: false},
+                {description:"Feed the chickens", isHighPriority:false},
+                {description:"Finish all of my chores", isHighPriority:false},
+                {description:"Party like it's 1699", isHighPriority:true}
             ],
-           
             newTask:""
         },
         methods:{

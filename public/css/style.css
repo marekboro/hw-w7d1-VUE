@@ -1,9 +1,74 @@
 #app {
-    /* width: 80%; */
+    width: 100%;
+    align-items: center;
     margin: 0,auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: blanchedalmond;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+form {
+display: flex;
+justify-content: space-between
+}
+#new-task{
+    width: 30%;
+}
+
+#inputInterface {
+    width: 80%;
+    background-color: darkkhaki;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#displayedTasks {
+    width: 80%;
+    /* background-color: rgb(220, 252, 220); */
+    background-color: magenta   ;
+    display: flex;
+    flex-direction: column;
+    margin: auto
+}
+ul {
+    margin: 0%;
+    padding: 0%;
+}
+
+ul > li {
+/* width: 100%; */
+padding-top: 2px;
+padding-bottom: 2px;
+margin: auto;
+/* background-color: linen; */
+display: flex;
+justify-content: space-evenly;
+/* margin: auto; */
+}
+
+.high_priority{
+border: 2px solid rgb(126, 2, 2);
+background-color: orange;
+
+}
+.low_priority {
+/* border: 2px solid coral; */
+
+background-color: rgb(235, 247, 132);
+background-origin: padding-box;;
+}
+
+#description{
+    width: 300px;
+}
+
+h1{
+    background-color: cornsilk;
+    text-align: center;
+    padding: 0%;
+    margin:  0 ;
 }

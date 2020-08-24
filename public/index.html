@@ -9,30 +9,36 @@
     <title>w7-d1-homework</title>
 </head>
 <body>
+    <h1>Amish Paradise</h1>
     <div id='app'>
         <section id="inputInterface">
         <form v-on:submit.prevent="addNewTask">
             <label for="newTask">Task description</label>
             <input id="new-task" type="text" v-model="newTask">
+            <div>
             <input id="h_priority" type="radio" v-model="priority" value='true'>
             <label for="h_priority">High</label>
+            </div>
+            <div>
             <input id="l_priority" type="radio" v-model="priority" value="false">
             <label for="l_priority">Low</label>
+            </div>
             <input type="submit" value="Save task">
         </form>
         </section>
         <section id="displayedTasks">
         <ul>
         <li v-for="(task,index) in tasks" :class="task.isHighPriority ? 'high_priority':'low_priority'">
-            <span>{{task.description}}</span>
-            <!-- <span>{{convertBool()}}</span> -->
-            <!-- <span>{{task.isHighPriority}}</span> -->
+            <span id="description">{{task.description}}</span>
             <span>{{convertBool(task.isHighPriority)}}</span>
             <span><button v-on:click=flipPriority(index)>Change Priority</button></span>
             <span><button v-on:click=removeTask(index)>Remove Task</button></span>
 
         </li>
         </ul>
+        </section>
+        <section>
+            <img src="./images/amish.png" width="500px" alt="Weird Al Yankovic posing as Collio for Amish Paradise video">
         </section>
     </div>
 </body>
